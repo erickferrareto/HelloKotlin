@@ -31,4 +31,51 @@ fun main() {
     } else if (idade < 18 && senha != correto){
         println("Error Error")
     }
+
+    //Condição WHEN
+    val celular = "Samsung"
+    when(celular){
+        "Samsung", "Motorola" -> println("Android")
+        else -> println("IOS")
+    }
+
+    //Loopins
+    var numero = 0
+    while(numero < 10){
+        println(numero)
+        numero += 1
+    }
+
+    //Functions
+    fun car(year: Int){
+        if (year >= 18){
+            println("You can drive")
+        } else {
+            println("You can't drive")
+        }
+    }
+    car(17)
+
+    fun age(x: Int, y: Int) : Int{
+        return x + y
+    }
+    println(age(10, 22))
+
+    //Arrays e Lists
+    val numbersof = arrayOf(1, 2, 3, 4);
+    println(numbersof[3])
+
+    val names = listOf("Erick", "Tayná", "Pedro")
+    print(names[1])
+
+    val name = mutableListOf<String>("Erick", "Tayna", "Pedro")
+    name.add("Alessandra")
+    name += "Haroldo"
+    println(name)
+
+    val map = mapOf(
+        "Apple" to "IOS",
+        "Samsung" to "Android"
+    )
+    println(map["Apple"])
 }
