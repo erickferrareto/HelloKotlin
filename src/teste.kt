@@ -5,7 +5,7 @@ fun main() {
     println(x + y);
 
     // Função que não retorna nada.
-    fun function(): Unit {
+    fun function() {
         val result = 2 + 2;
         println(result);
     }
@@ -65,9 +65,11 @@ fun main() {
     val numbersof = arrayOf(1, 2, 3, 4);
     println(numbersof[3])
 
+    //Lista não mutável
     val names = listOf("Erick", "Tayná", "Pedro")
     print(names[1])
 
+    //Listas mutáveis
     val name = mutableListOf<String>("Erick", "Tayna", "Pedro")
     name.add("Alessandra")
     name += "Haroldo"
@@ -78,4 +80,15 @@ fun main() {
         "Samsung" to "Android"
     )
     println(map["Apple"])
+
+    //Lambdas
+    val firstLambda = { x:  Int, y: Int -> Int
+        x + y
+    }
+    println(firstLambda(2, 8))
+    //Ou...
+    val secondLambda: (Int) -> Int = {
+        it + it
+    }
+    println(secondLambda(8))
 }
