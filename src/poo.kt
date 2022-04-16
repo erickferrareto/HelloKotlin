@@ -1,9 +1,6 @@
 //Porgramção Orientada a Objetos em Kotlin
 open class Person(var name : String, var old : Int){
-    init {
-        this.name = name.toUpperCase()
-        println(name)
-    }
+
 }
 class Man(name : String, old : Int) : Person(name, old){
     init {
