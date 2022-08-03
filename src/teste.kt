@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main() {
     val x = 3;
     var y = 10;
@@ -91,4 +93,9 @@ fun main() {
         it + it
     }
     println(secondLambda(8))
+
+    val listaNova = arrayListOf<Int>(1, 2, 3, 4)
+    var random = Random()
+    println("-------------------")
+    println(listaNova.random())
 }
